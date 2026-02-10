@@ -5,7 +5,7 @@ theme = "meghna-hugo"
 # Default time zone for time stamps; use any valid tz database name: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List
 timeZone = "America/New_York"
 # post pagination
-pagination.pagerSize = 6 # see https://gohugo.io/extras/pagination/
+pagerSize = 6 # see https://gohugo.io/extras/pagination/
 # post excerpt
 summaryLength = 15 # see https://gohugo.io/content-management/excerpts/
 # google analytics
@@ -20,18 +20,18 @@ hasCJKLanguage = false #  If hasCJKLanguage true, auto-detect Chinese/Japanese/K
 ############################# Build ##############################
 [build]
 noJSConfigInAssets = false
-useResourceCacheWhen = 'fallback'
+useResourceCacheWhen = "fallback"
 [build.buildStats]
 enable = true
 [[build.cachebusters]]
-source = 'assets/.*\.(js|ts|jsx|tsx)'
-target = '(js|scripts|javascript)'
+source = "assets/.*\\.(js|ts|jsx|tsx)"
+target = "(js|scripts|javascript)"
 [[build.cachebusters]]
-source = 'assets/.*\.(css|sass|scss)$'
-target = '(css|styles|scss|sass)'
+source = "assets/.*\\.(css|sass|scss)$"
+target = "(css|styles|scss|sass)"
 [[build.cachebusters]]
-source = 'assets/.*\.(.*)$'
-target = '$1'
+source = "assets/.*\\.(.*)$"
+target = "target = "
 
 ############################# Outputs ##############################
 [outputs]
@@ -94,7 +94,7 @@ link = "plugins/google-map/map.js"
 
 ############################# Default Parameters ##########################
 [params]
-logo = "images/logo.png"
+logo = "/images/2.png"
 # Meta data
 description = "Responsive Multipurpose Parallax Hugo Template"
 author = "Themefisher"
@@ -124,27 +124,27 @@ map_marker = "images/marker.png"
 ############################# social icons ##########################
 [[params.social]]
 icon = "ti-facebook" # themify icon pack : https://themify.me/themify-icons
-link = "#"
+link = "#" #"
 
 [[params.social]]
 icon = "ti-twitter-alt" # themify icon pack : https://themify.me/themify-icons
-link = "#"
+link = "#" #"
 
 [[params.social]]
 icon = "ti-youtube" # themify icon pack : https://themify.me/themify-icons
-link = "#"
+link = "#" #"
 
 [[params.social]]
 icon = "ti-linkedin" # themify icon pack : https://themify.me/themify-icons
-link = "#"
+link = "#" #"
 
 [[params.social]]
 icon = "ti-dribbble" # themify icon pack : https://themify.me/themify-icons
-link = "#"
+link = "#" #"
 
 [[params.social]]
 icon = "ti-pinterest" # themify icon pack : https://themify.me/themify-icons
-link = "#"
+link = "#" #"
 
 
 ################################ English Language ########################
