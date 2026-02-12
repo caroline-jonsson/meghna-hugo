@@ -22,7 +22,6 @@ env:
   HUGO_ENV: production
   HUGO_VERSION: "0.147.2"
   GO_VERSION: "1.24.3"
-  NODE_VERSION: "18.15.0"
   TINA_CLIENT_ID: ${{ vars.TINA_CLIENT_ID }}
   TINA_TOKEN: ${{ vars.TINA_TOKEN }}
   TINA_SEARCH_TOKEN: ${{ secrets.TINA_SEARCH_TOKEN }}
@@ -36,6 +35,11 @@ jobs:
         with:
           submodules: recursive
           fetch-depth: 0
+
+      - name: Detect runner architecture
+        run: |
+          arch=$(uname -m | sed -e "s/aarch64/arm64/" -e "s/x86_64/amd64/")
+          echo "RUNNER_ARCH=$arch" >> "$GITHUB_ENV"
       
       - name: Cache Hugo binary
         uses: actions/cache@v4
@@ -49,7 +53,7 @@ jobs:
         run: |
           mkdir -p ~/hugo-cache
           if [ ! -f ~/hugo-cache/hugo.deb ]; then
-            wget -O ~/hugo-cache/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-arm64.deb
+            wget -O ~/hugo-cache/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-${RUNNER_ARCH}.deb
           fi
           sudo dpkg -i ~/hugo-cache/hugo.deb
       
@@ -65,7 +69,7 @@ jobs:
         run: |
           mkdir -p ~/go-cache
           if [ ! -f ~/go-cache/go.tar.gz ]; then
-            wget -O ~/go-cache/go.tar.gz https://dl.google.com/go/go${GO_VERSION}.linux-amd64.tar.gz
+            wget -O ~/go-cache/go.tar.gz https://dl.google.com/go/go${GO_VERSION}.linux-${RUNNER_ARCH}.tar.gz
           fi
           sudo tar -C /usr/local -xzf ~/go-cache/go.tar.gz
 
