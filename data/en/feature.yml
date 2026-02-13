@@ -1,7 +1,7 @@
 ############################# feature ###################################
 feature:
   enable: true
-  image: /images/about/Massa_blur.webp
+  image: /images/about/Massa_blur.jpg
   image_webp: /images/about/Massa_blur.webp
   title: The Benefits of Massage
   content: The most common feedback I get is clients discovering their body
