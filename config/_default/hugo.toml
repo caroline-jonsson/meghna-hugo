@@ -93,7 +93,7 @@ link = "plugins/google-map/map.js"
 
 ############################# Default Parameters ##########################
 [params]
-logo = "/images/2.png"
+logo = "/images/6-cropped.svg"
 # Meta data
 description = "Responsive Multipurpose Parallax Hugo Template"
 author = "Themefisher"
@@ -116,22 +116,22 @@ expire_days = 2
 [params.map]
 enable = false
 gmap_api = "https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"
-map_latitude = "51.5223477"
-map_longitude = "-0.1622023"
+map_latitude = "37.7239951"
+map_longitude = "-8.7817132"
 map_marker = "images/marker.png"
 
 ############################# social icons ##########################
 [[params.social]]
 icon = "ti-facebook" # themify icon pack : https://themify.me/themify-icons
-link = "#" #" #"
+link = "#" #" #" #"
 
 [[params.social]]
-icon = "ti-twitter-alt" # themify icon pack : https://themify.me/themify-icons
-link = "#" #" #"
+icon = "ti-dribbble" # themify icon pack : https://themify.me/themify-icons
+link = "#" #" #" #"
 
 [[params.social]]
-icon = "ti-youtube" # themify icon pack : https://themify.me/themify-icons
-link = "#" #" #"
+icon = "ti-pinterest" # themify icon pack : https://themify.me/themify-icons
+link = "#" #" #" #"
 
 [[params.social]]
 icon = "ti-linkedin" # themify icon pack : https://themify.me/themify-icons
