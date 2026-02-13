@@ -1,27 +1,25 @@
 ############################# feature ###################################
 feature:
-  enable : true
-  image : images/about/about-business-man.jpg
-  image_webp : images/about/about-business-man.webp
-  title : We’re A Digital Design Agency.
-  content : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam tempora itaque, autem dolores culpa cum mollitia voluptate nesciunt voluptatibus quasi."
-  feature_item : 
-      # feature item loop
-    - title : SEO Optimized
-      icon : ti-world # themify icon pack : https://themify.me/themify-icons
-      content : Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus consectetur dolores repellendus eos saepe
-      
-      # feature item loop
-    - title : Easy Customization
-      icon : ti-panel # themify icon pack : https://themify.me/themify-icons
-      content : Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus consectetur dolores repellendus eos saepe
+  enable: true
+  image: /images/IMG_0849.jpeg
+  image_webp: /images/IMG_0849.jpeg
+  title: The Benefits of Massage
+  content: The most common feedback I get is clients discovering their body
+    through the massage. Sometimes we feel tension or pain in one part of the
+    body when the source of it is in a different location. Sometimes we are not
+    tuned into all parts of our body. Sometimes we won’t notice our tension
+    until someone else starts to release it.
+  feature_item:
+    - title: Recovery
+      icon: ti-world
+      content: Helps muscles to recover and relax after exercise.
+    - title: Relaxation
+      icon: ti-panel
+      content: Helps the body to relax through oxytocin release.
+    - title: Blood Circulation
+      icon: ti-stats-up
+      content: Helps to improve blood circulation.
+    - title: Treatment
+      icon: ti-announcement
+      content: Helps to ease certain pains and issues.
 
-      # feature item loop
-    - title : SEO Optimized
-      icon : ti-stats-up # themify icon pack : https://themify.me/themify-icons
-      content : Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus consectetur dolores repellendus eos saepe
-      
-      # feature item loop
-    - title : Easy Customization
-      icon : ti-announcement # themify icon pack : https://themify.me/themify-icons
-      content : Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus consectetur dolores repellendus eos saepe
