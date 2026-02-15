@@ -5,8 +5,8 @@ service:
   service_item:
     - name: 60 minutes
       icon: ""
-      content: "A one-hour massage can focus on specific parts (e.g. back and neck) of
-        the body or be a full body massage. Price: 55 euros"
+      content: "A one-hour massage can focus on specific parts of the body (e.g. back
+        and neck) or be a full body massage. Price: 55 euros"
     - name: 90 minutes
       icon: ""
       content: "A longer massage that gives time to fully work through the whole body.
@@ -19,6 +19,7 @@ service:
         information.
     - name: Local Clients
       icon: ""
-      content: I offer discounted prices to local returning clients, ask me for more
+      content: I offer discounted prices to local returning clients. Ask me for more
         information.
+draft: false
 
